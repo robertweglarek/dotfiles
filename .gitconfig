@@ -1,0 +1,21 @@
+[user]
+  name = Robert Weglarek
+  email = weglarek.robert@gmail.com
+[branch]
+  autosetuprebase = always
+[core]
+  editor = emacs
+[alias]
+  hash = rev-parse --short HEAD
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  alias = config --get-regexp alias
+  udiff = diff HEAD...origin/develop
+  boo = "!func(){ git add -u && git commit --amend && git push origin --force; }; func"
+[push]
+  default = current
