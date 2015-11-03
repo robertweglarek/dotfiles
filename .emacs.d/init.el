@@ -67,6 +67,14 @@
 (setq auto-save-file-name-transforms
       `((".*" ,my-autosave-directory t)))
 
+;; uniquify
+(use-package uniquify
+  :config
+  (setq uniquify-buffer-name-style 'forward
+        uniquify-separator "/"
+        uniquify-after-kill-buffer-p t
+                uniquify-ignore-buffers-re "^\\*"))
+
 ;; dired
 (use-package dired
   :init
