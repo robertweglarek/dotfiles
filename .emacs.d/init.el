@@ -84,6 +84,9 @@
         dired-recursive-copies 'always)
   (use-package dired-x))
 
+;; Buffer auto refresh
+(global-auto-revert-mode t)
+
 ;; Use Google Chrome to open links
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "google-chrome")
