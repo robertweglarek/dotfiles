@@ -317,3 +317,6 @@
 (helm-mode 1)
 
 (helm-projectile-on)
+
+(use-package helm-ag
+  :ensure t)
